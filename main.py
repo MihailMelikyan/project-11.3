@@ -1,5 +1,4 @@
 import inspect
-from pprint import pprint
 def introspection_info(obj):
     all_attrs = dir(obj)
     methods = [attr for attr in all_attrs if callable(getattr(obj, attr)) and not attr.startswith("__")]
